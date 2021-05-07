@@ -1,378 +1,404 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio </title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="site_main_wrapper">
-		<button class="hamberger">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Portfolio </title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" type="text/javascript" href="js/app.js">
+		<link rel="stylesheet" href="css/scss.css"> -->
+		<style>
+		body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		}
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+		#myBtn:hover {
+		background-color: #555;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="site_main_wrapper">
+			<button class="hamberger">
 			<img src="./images/hamberger.svg" alt="">
-		</button>
-
-		<div class="mobile_nav">
-			<button class="times"><img src="./images/times.svg" alt=""></button>
-			<ul>
-				<li><a href="#mobile_nav">	Home</a>	</li>
-				<li><a href="#about1">		About</a>	</li>
-				<li><a href="#services1">	Services</a></li>
-				<li><a href="#work">		Work</a>	</li>
-				<li><a href="#blog">		Blog</a>	</li>
-			</ul>
-		</div>
-		<header>
-			<div class="container">
-				<!-- this include logo,links,button -->
-				
-				<nav id="main_nav" class="flex items-center justify-between">
-					<div class="left flex items-center ">
-						<!-- LOGO  -->
-						<div class="branding">
-							<img src="./images/logo.svg" alt=""> 
+			</button>
+			<div class="mobile_nav">
+				<button class="times"><img src="./images/times.svg" alt=""></button>
+				<ul>
+					<li><a href="#mobile_nav">	Home</a>	</li>
+					<li><a href="#about1">		About</a>	</li>
+					<li><a href="#services1">	Services</a></li>
+					<li><a href="#work">		Work</a>	</li>
+					<li><a href="#blog">		Blog</a>	</li>
+				</ul>
+			</div>
+			<header>
+				<div class="container">
+					<!-- this include logo,links,button -->
+					
+					<nav id="main_nav" class="flex items-center justify-between">
+						<div class="left flex items-center ">
+							<!-- LOGO  -->
+							<div class="branding">
+								<img src="./images/design2.jpg" alt="">
+							</div>
+							<!-- LINKS -->
+							<div>
+								<a href="#"> Home </a>
+								<a href="#services1"> Services </a>
+								<a href="#about1"> About </a>
+								<a href="#work1"> Pages </a>
+								<a href="#blog1"> Blog </a>
+								<!-- <a href="#contact1"> Contact </a> -->
+							</div>
 						</div>
-						<!-- LINKS -->
-						<div>
-							<a href="#"> Home </a>
-							<a href="#services1"> Services </a>
-							<a href="#about1"> About </a>
-							<a href="#work1"> Pages </a>
-							<a href="#blog1"> Blog </a>
-							<!-- <a href="#contact1"> Contact </a> -->
+						<!-- Rights side  -->
+						<div class="right">
+							<!-- <button class="btn btn-primary "> Contact </button> -->
+							<a href="#contact1" style="background: var(--primary)" > Contact</a>
+						</div>
+					</nav>
+					
+					<!-- Navbar completed -->
+					<div class="hero flex items-center justify-between">
+						<div class="left flex-1 justify-center">
+							<img src="./images/me.jpg" alt="">
+						</div>
+						<div class="right flex-1">
+							<h6>Pranjal Kaushik</h6>
+							<h1> I'm a Web
+							<span>Developer</span> </h1>
+							<p>
+								WordPress Developer  |  Web Developer  |  Photographer  |  Creator  |  Logo Designer  |  Photo Editor.
+							</p>
+							<!-- <p>I am Freelance Developer Currently Working On Wordpress Web Development And ReactJs .</p> -->
+							
+							<div>
+								<form method="get" action="PranjalResume.docx"><button class="btn btn-secondary" type="submit">Download</button>
+								</form>
+								<!-- <button class="btn btn-secondary" type="">DOWNLOAD CV </button> -->
+							</div>
 						</div>
 					</div>
-					<!-- Rights side  -->
-					<div class="right">
-						<!-- <button class="btn btn-primary "> Contact </button> -->
-						<a href="#contact1" style="background: var(--primary)" > Contact</a>
+				</div>
+			</header>
+			
+			<!-- About Page -->
+			
+			<section id="about1" class="about">
+				<div class="container flex items-center about-inner-wrap ">
+					<!-- Left side image -->
+					<div class="flex-1">
+						<img class="about-me-img" src="./images/Capture.JPG">
 					</div>
-				</nav>
-	
-				<!-- Navbar completed -->
-				<div class="hero flex items-center justify-between">
-					<div class="left flex-1 justify-center">
-						<img src="./images/me.jpg" alt="">
+					<!-- right side -->
+					<div class="flex-1 right">
+						<h1>About <span>Me</span></h1>
+						<h3>Hello i'm Pranjal Kaushik</h3>
+						<p>I am Freelance Web Developer and Currently Working on Wordpress Web Development & React Js Web Development.</p>
+						<div class="social">
+							<a href="#"><img src="./images/dribbble.svg" alt=""></a>
+							<a href="#"><img src="./images/fblogo.svg" alt=""></a>
+							<a href="#"><img src="./images/twitter.svg" alt=""></a>
+							<a href="#"><img src="./images/linkedinlogo.svg" alt=""></a>
+							<a href="#"><img src="./images/instalogo.svg" alt=""></a>
+						</div>
 					</div>
-					<div class="right flex-1">
-						<h6>Pranjal Kaushik</h6>
-						<h1> I'm a Web 
-						<span>Developer</span> </h1>
-						<p>Javascript React</p>
+				</div>
+			</section>
+			
+			<!-- Services Page  -->
+			
+			<section id="services1" class="services">
+				<div class="container">
+					<h1 class="section_heading"> <span>Our </span> Services</h1>
+					<p> We provide high standard clean website for business solutions</p>
+					<div class="card_wrapper">
+						<div class="card">
+							<img src="./images/paintbrushmain.svg" alt="">
+							<h2>Graphic Design</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
 						
-					<div>
-						<button class="btn btn-secondary">DOWNLOAD CV </button>
-					</div>
+						<div class="card">
+							<img src="./images/coding.svg" alt="">
+							<h2>Web Development</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
+						
+						<div class="card">
+							<img src="./images/portfolio.svg" alt="">
+							<h2>Media Marketing</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
+						
+						<div class="card">
+							<img src="./images/desktop-monitor.svg" alt="">
+							<h2>Web Design</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
+						
+						<div class="card">
+							<img src="./images/video-file.svg" alt="">
+							<h2>Motion Graphic</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
+						
+						<div class="card">
+							<img src="./images/app.svg" alt="">
+							<h2>Apps</h2>
+							<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</header>
-	
-		<!-- About Page -->
-	
-		<section id="about1" class="about">
-			<div class="container flex items-center about-inner-wrap ">
-				<!-- Left side image -->
-				<div class="flex-1">
-					<img class="about-me-img" src="./images/Capture.JPG">
-				</div>
-				<!-- right side -->
-				<div class="flex-1 right">
-					<h1>About <span>Me</span></h1>
-					<h3>Hello i'm Pranjal Kaushik</h3>
-					<p>I am Web Developer.
-					And Currently I am Working on WordPress and React also. </p>
-					<div class="social">
-						<a href="#"><img src="./images/dribbble.svg" alt=""></a>
-						<a href="#"><img src="./images/fblogo.svg" alt=""></a>
-						<a href="#"><img src="./images/twitter.svg" alt=""></a>
-						<a href="#"><img src="./images/linkedinlogo.svg" alt=""></a>
-						<a href="#"><img src="./images/instalogo.svg" alt=""></a>
-					</div>	
-				</div>
-			</div>
-		</section>
-	
-		<!-- Services Page  -->
-	
-		<section id="services1" class="services">
-			<div class="container">
-				<h1 class="section_heading"> <span>Our </span> Services</h1>
-				<p> We provide high standard clean website for business solutions</p>
-				<div class="card_wrapper">
-					<div class="card">
-						<img src="./images/paintbrushmain.svg" alt="">
-						<h2>Graphic Design</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-	
-					<div class="card">
-						<img src="./images/coding.svg" alt="">
-						<h2>Web Development</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-	
-					<div class="card">
-						<img src="./images/portfolio.svg" alt="">
-						<h2>Media Marketing</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-	
-					<div class="card">
-						<img src="./images/desktop-monitor.svg" alt="">
-						<h2>Web Design</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-	
-					<div class="card">
-						<img src="./images/video-file.svg" alt="">
-						<h2>Motion Graphic</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-	
-					<div class="card">
-						<img src="./images/app.svg" alt="">
-						<h2>Apps</h2>
-						<p>There are many variations of passages of but the majority have suffered alteration in some form.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		<!-- Next Page Freelance page -->
-	
-		<section class="freelance">
-			<h1>I am Available For Freelance </h1>
-			<p>We provide high standard clean website for your business solutions.</p>
-			<button class="btn btn-primary">Download CV</button>
-		</section>
-	
-		<!-- next page Our Client Slider -->
-	
-		<section class="reviews">
-			<div class="container">
-				<h1 class="section_heading"> <span>Our </span>Clients</h1>
-				<p>We provide high standard clean website.</p>
-				<div class="slider">
-					<div class="slide">
-						<img src="./images/lady.png" alt="">
-						<p> This is some random text .</p>
-						<span>John Doep, Company ABC</span>
-					</div>
-	
-					<div class="slide">
-						<img src="./images/lady.png" alt="">
-						<p>Some Random Text is here .</p>
-						<span>John Doep, Company ABC</span>
-					</div>
-	
-					<div class="slide">
-						<img src="./images/lady.png" alt="">
-						<p>  This is some random text  </p>
-						<span>John Doep, Company ABC</span>
-					</div>
-	
-					<div class="slide">
-						<img src="./images/lady.png" alt="">
-						<p>  this is some random text.  </p>
-						<span>John Doep, Company ABC</span>
-					</div>
-				</div>
-	
-				<div class="slider-dots">
-	
-				</div>
-			</div>
-		</section>
-	
-		<!-- Work Page -->
-	
-		<section id="work1" class="work">
-			<div class="container">
-				<h1 class="section_heading"><span>Our</span> Work</h1>
-				<p>We provide high standard clean website for your business.</p>
-	
-				<div class="card_wrapper">
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-	
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-	
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-	
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-	
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-	
-					<div class="card">
-						<div class="overlay">
-							<span>Category</span>
-							<a href="#">Web Development</a>
-						</div>
-						<img src="./images/ph-1.png" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		<!-- Blog Page -->
-	
-		<section id="blog1" class="blog">
-			<div class="container">
-				<h1 class="section_heading"><span>Our</span> Blog</h1>
-				<p>We provide high standard clean website for business solutions.</p>
-	
-				<div class="card_wrapper">
-					<div class="card">
-						<div class="img_wrapper">
-							<img src="./images/article-ph-1.png" alt="">
-						</div>
-						<div class="card_content">
-							<a href="#">
-								<h1>Heading of paragraph</h1>
-							</a>
-							<span>Feb 28, 2021</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam velit iure incidunt illum veritatis quo sed odit. Quia fugiat suscipit sint accusantium commodi ab nihil eos harum cupiditate quam!</p>
-							<a href="#">Read more</a>
-						</div>
-					</div>
-	
-					<div class="card">
-						<div class="img_wrapper">
-							<img src="./images/article-ph-1.png" alt="">
-						</div>
-						<div class="card_content">
-							<a href="#">
-								<h1>Heading of paragraph</h1>
-							</a>
-							<span>Feb 28, 2021</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam velit iure incidunt illum veritatis quo sed odit. Quia fugiat suscipit sint accusantium commodi ab nihil eos harum cupiditate quam!</p>
-							<a href="#">Read more</a>
-						</div>
-					</div>
-	
-					<div class="card">
-						<div class="img_wrapper">
-							<img src="./images/article-ph-1.png" alt="">
-						</div>
-						<div class="card_content">
-							<a href="#">
-								<h1>Heading of paragraph</h1>
-							</a>
-							<span>Feb 28, 2021</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam velit iure incidunt illum veritatis quo sed odit. Quia fugiat suscipit sint accusantium commodi ab nihil eos harum cupiditate quam!</p>
-							<a href="#">Read more</a>
-						</div>
-					</div>
-	
-				</div>
-			</div>
-		</section>
-	
-		<!-- Contact Page -->
-	
-		<section id="contact1" class="contact">
-			<div class="container">
-				<h1 class="section_heading">Contact <span>Us</span></h1>
-				<p>We provide high quality and clean website for businesses.</p>
-				<div class="card_wrapper">
-					<div class="card">
-						<img src="./images/phone.png" alt="">
-						<h1>Call Us On</h1>
-						<h6>+918888888888</h6>
-					</div>
-					<div class="card">
-						<img src="./images/phone.png" alt="">
-						<h1>Email us at</h1>
-						<h6>support@companyname.com</h6>
-					</div>
-					<div class="card">
-						<img src="./images/phone.png" alt="">
-						<h1>Visit Office</h1>
-						<h6>Xyz, abc city, state, country</h6>
-					</div>
-				</div>
-	
-				<!-- For inputs boxes -->
-				<form action="">
-					<div class="input_wrap">
-						<input type="text" placeholder="Your name *">
-						<input type="email" placeholder="Your email *">
-					</div>
-		
-					<div class="input_wrap2">
-						<input type="text" placeholder="Your Subject *">
-						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message...."></textarea>
-					</div>
-		
-					<div class="btn_wrapper">  
-						<button class="btn btn-primary">Send Message</button>
-					</div>
+			</section>
+			
+			<!-- Next Page Freelance page -->
+			
+			<section class="freelance">
+				<h1>I am Available For Freelance </h1>
+				<p>We provide high standard clean website for your business solutions.</p>
+				<form method="get" action="PranjalResume.docx"><button class="btn btn-secondary" type="submit">Download</button>
 				</form>
-	
-			</div>
-		</section>
-	
-		<!-- Footer -->
-	
-		<footer>
-			<img class="footer_logo" src="./images/logo-2.svg" alt="">
-			<div class="footer_socials">
-				<a href=""><img src="./images/web-development.svg" height="25" width="25" alt=""></a>
-				<a href="facebook.com"><img src="./images/fblogo.svg" height="25" width="25" alt=""></a>
-				<a href=""><img src="./images/twitter.svg" height="25" width="25" alt=""></a>
-				<a href=""><img src="./images/instalogo.svg" height="25" width="25" alt=""></a>
-				<a href=""><img src="./images/pinterestlogo.svg" height="25" width="25" alt=""></a>
-			</div>
-	
-			<div class="copyright">
-				Copyright 2021 ©️ Name PSD Template. All Rights Reserved.
-			</div>
-		</footer>
+				<!-- <button class="btn btn-primary">Download CV</button> -->
+			</section>
+			
+			<!-- next page Our Client Slider -->
+			
+			<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+			
+			<!-- Work Page -->
+			
+			<section id="work1" class="work">
+				<div class="container">
+					<h1 class="section_heading"><span>Our</span> Work</h1>
+					<p>We provide high standard clean website for your business.</p>
+					
+					<div class="card_wrapper">
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Web Development</a>
+							</div>
+							<img src="./images/ph-1.png" alt="">
+						</div>
+						
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Web Development</a>
+							</div>
+							<img src="./images/ph-1.png" alt="">
+						</div>
+						
+						<div class="card">
+							<div class="overlay">
+								<span>Category</span>
+								<a href="#">Web Development</a>
+							</div>
+							<img src="./images/ph-1.png" alt="">
+						</div>
+						
+						<!-- <div class="card">
+									<div class="overlay">
+												<span>Category</span>
+												<a href="#">Web Development</a>
+									</div>
+									<img src="./images/ph-1.png" alt="">
+						</div>
+						
+						<div class="card">
+									<div class="overlay">
+												<span>Category</span>
+												<a href="#">Web Development</a>
+									</div>
+									<img src="./images/ph-1.png" alt="">
+						</div>
+						
+						<div class="card">
+									<div class="overlay">
+												<span>Category</span>
+												<a href="#">Web Development</a>
+									</div>
+									<img src="./images/ph-1.png" alt="">
+						</div> -->
+					</div>
+				</div>
+			</section>
+			
+			<!-- Blog Page -->
+			
+			<section id="blog1" class="blog">
+				<div class="container">
+					<h1 class="section_heading"><span>Our</span> Blog</h1>
+					<p>We provide high standard clean website for business solutions.</p>
+					
+					<div class="card_wrapper">
+						<div class="card">
+							<div class="img_wrapper">
+								<img src="./images/article-ph-1.png" alt="">
+							</div>
+							<div class="card_content">
+								<a href="#">
+									<h1>Heading of paragraph</h1>
+								</a>
+								<span>Feb 28, 2021</span>
+								<p> Here is some random text. </p>
+								<a href="#">Read more</a>
+							</div>
+						</div>
+						
+						<div class="card">
+							<div class="img_wrapper">
+								<img src="./images/article-ph-1.png" alt="">
+							</div>
+							<div class="card_content">
+								<a href="#">
+									<h1>Heading of paragraph</h1>
+								</a>
+								<span>Feb 28, 2021</span>
+								<p> Here is some random text.!</p>
+								<a href="#">Read more</a>
+							</div>
+						</div>
+						
+						<div class="card">
+							<div class="img_wrapper">
+								<img src="./images/article-ph-1.png" alt="">
+							</div>
+							<div class="card_content">
+								<a href="#">
+									<h1>Heading of paragraph</h1>
+								</a>
+								<span>Feb 28, 2021</span>
+								<p> Here is some random text. </p>
+								<a href="#">Read more</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			
+			<!-- Contact Page -->
+			
+			<section id="contact1" class="contact">
+				<div class="container">
+					<h1 class="section_heading">Contact <span>Us</span></h1>
+					<p>We provide high quality and clean website for businesses.</p>
+					<div class="card_wrapper">
+						<div class="card">
+							<img src="./images/phone.png" alt="">
+							<h1>Call Us On</h1>
+							<h6>+918888888888</h6>
+						</div>
+						<div class="card">
+							<img src="./images/phone.png" alt="">
+							<h1>Email us at</h1>
+							<h6>support@companyname.com</h6>
+						</div>
+						<div class="card">
+							<img src="./images/phone.png" alt="">
+							<h1>Visit Office</h1>
+							<h6>Xyz, abc city, state, country</h6>
+						</div>
+					</div>
+					
+					<!-- For inputs boxes -->
+					<form action="">
+						<div class="input_wrap">
+							<input type="text" placeholder="Your name *">
+							<input type="email" placeholder="Your email *">
+						</div>
+						
+						<div class="input_wrap2">
+							<input type="text" placeholder="Your Subject *">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Your Message...."></textarea>
+						</div>
+						
+						<div class="btn_wrapper">
+							<button class="btn btn-primary">Send Message</button>
+						</div>
+					</form>
+					
+				</div>
+			</section>
+			
+			<!-- Footer -->
+			
+			<footer>
+				<img class="footer_logo" src="./images/logo-2.svg" alt="">
+				<div class="footer_socials">
+					<a href=""><img src="./images/web-development.svg" height="25" width="25" alt=""></a>
+					<a href="facebook.com"><img src="./images/fblogo.svg" height="25" width="25" alt=""></a>
+					<a href=""><img src="./images/twitter.svg" height="25" width="25" alt=""></a>
+					<a href=""><img src="./images/instalogo.svg" height="25" width="25" alt=""></a>
+					<a href=""><img src="./images/pinterestlogo.svg" height="25" width="25" alt=""></a>
+				</div>
+				
+				<div class="copyright">
+					Copyright 2021 ©️ Name PSD Template. All Rights Reserved.
+				</div>
+			</footer>
+			
+		</div>
+
+		<!-- ################################################################################################################### -->
+		<!-- Scroll Up  -->
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!-- <div style="background-color:black;color:white;padding:30px">Scroll Down</div> -->
+		<!-- <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible
+		<strong>when the user starts to scroll the page</strong>.
+		</div> -->
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+		} else {
+		mybutton.style.display = "none";
+		}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+		</script>
+
+		<!-- End of Scroll Top -->
+		<!-- ################################################################################################################# -->
 		
-	</div>
-
-
-
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="./js/app.js"></script>
-</body>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
 </html>
